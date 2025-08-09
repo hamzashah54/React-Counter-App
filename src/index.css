@@ -1,0 +1,94 @@
+
+ :root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87); 
+    background-color: #242424;
+    background: linear-gradient(135deg, #1a0033, #4b0082, #8000ff);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.Headingdiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 11rem;
+  text-shadow: 0 0 10px rgba(128, 0, 255, 0.7);
+  font-size: 2rem;
+}
+
+.Buttondiv {
+  display: flex;  
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+button {
+ display: inline-block;
+ width: 200px;
+ height: 60px;
+ border-radius: 10px;
+ border: 2px solid #03045e;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.5s ease-in;
+ z-index: 1;
+ color: #ffffff;
+ font-size: 1.3rem;
+ font-weight: 600;
+ box-shadow: 0 0 10px rgba(128, 0, 255, 0.4);
+}
+
+button::before,
+button::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ width: 0;
+ height: 100%;
+ transform: skew(15deg);
+ transition: all 0.5s;
+ overflow: hidden;
+ z-index: -1;
+ 
+}
+
+button::before {
+ left: -10px;
+ background: #240046;
+}
+
+button::after {
+ right: -10px;
+ background: #5a189a;
+}
+
+button:hover::before,
+button:hover::after {
+ width: 58%;
+}
+
+button:hover span {
+ color: #e0aaff;
+ transition: 0.3s;
+ cursor: pointer;
+}
+
+button:hover{
+cursor: pointer;
+
+}
+
+button span {
+ color: #03045e;
+ font-size: 18px;
+ transition: all 0.3s ease-in;
+ 
+}
